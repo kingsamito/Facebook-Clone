@@ -1,0 +1,867 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(201, 202, 208);
+    padding-bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: rgb(66, 66, 66);
+    z-index: 3;
+}
+
+.navbar-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.side,
+.sidee {
+    display: none;
+}
+
+.active {
+    color: rgb(55, 117, 231);
+    border-top: 2px solid;
+}
+
+.navbar-icons span {
+    font-size: 10px;
+}
+
+.head {
+    background-color: white;
+}
+
+.head-top {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 0px;
+}
+
+.head-top h2 {
+    margin: 0;
+}
+
+.head-bottom {
+    display: flex;
+    align-items: center;
+    padding: 0 15px 5px;
+    background-color: white;
+}
+
+.head-bottom
+
+/*  */
+.img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 7px;
+    object-fit: cover;
+}
+
+.md-none {
+    display: none;
+}
+
+.head-bottom p {
+    margin-right: auto;
+}
+
+.menu-fb {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.menu-fb h2 {
+    margin-left: 10px;
+    color: rgb(56, 117, 232);
+}
+
+.search-msg {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon-con p {
+    display: none;
+}
+
+.search-icon {
+    background-color: rgb(227, 228, 234);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.msg-icon {
+    margin-left: 10px;
+    background-color: rgb(227, 228, 234);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.search-msg .notify-icon {
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(227, 228, 234);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.collections {
+    color: rgb(104, 184, 107);
+}
+
+
+.stories {
+    padding: 7px 15px;
+    margin-top: 5px;
+    display: flex;
+    overflow: auto hidden;
+    scrollbar-width: none;
+    background-color: white;
+}
+
+.create-story {
+    background-color: rgb(246, 248, 249);
+    width: 110px;
+    border-radius: 10px;
+    height: 170px;
+    flex: 0 0 auto;
+    position: relative;
+    border-left: 1px solid rgb(227, 228, 234);
+    border-right: 1px solid rgb(227, 228, 234);
+    border-bottom: 1px solid rgb(227, 228, 234);
+}
+
+.create-story img {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.create-story-text {
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+.add-icon {
+    background-color: rgb(56, 117, 232);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    border: 4px solid rgb(246, 248, 249);
+}
+
+.create-story-text h4 {
+    margin: 0;
+}
+
+.stories-child {
+    width: 110px;
+    height: 170px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 5px;
+    flex: 0 0 auto;
+}
+
+.stories-child span {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 110px;
+    height: 170px;
+    position: absolute;
+    top: 0;
+}
+
+.full-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.round-img {
+    height: 30px;
+    width: 30px;
+    border: 4px solid rgb(52, 118, 234);
+    border-radius: 50%;
+    margin-right: 7px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+    left: 7px;
+    top: 7px;
+}
+
+.stories-child span {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    left: 0;
+    color: white;
+    font-size: bold;
+}
+
+.feeds {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+.feeds-top {
+    display: flex;
+    align-items: flex-start;
+    padding: 7px 15px 0;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    margin-right: auto;
+    max-width: 85%;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+.dp {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 7px;
+    object-fit: cover;
+}
+
+.info-name,
+.info-with,
+.info-others {
+    font-weight: bold;
+}
+
+.info-time-who {
+    display: flex;
+    align-items: center;
+    color: rgb(102, 103, 105);
+}
+
+.info-time-who span {
+    font-size: small;
+    margin-right: 3px;
+}
+
+.dot-close {
+    color: rgb(102, 103, 105);
+}
+
+.feeds-text {
+    margin-top: 0;
+    padding: 0 15px;
+}
+
+.feeds-photo {
+    width: 100%;
+    height: auto;
+}
+
+.feeds-bottom {
+    padding: 0 15px;
+}
+
+.react-com {
+    display: flex;
+    align-items: center;
+    padding: 6px 0px;
+    position: relative;
+}
+
+.thumb {
+    background-color: rgb(56, 109, 236);
+}
+
+.favorite {
+    background-color: rgb(226, 74, 84);
+}
+
+.thumb,
+.favorite {
+    border-radius: 50%;
+    color: white;
+    padding: 2px;
+}
+
+.no-reaction {
+    margin-left: 3px;
+    margin-right: auto;
+    color: rgb(102, 103, 104);
+
+}
+
+.no-comment {
+    color: rgb(102, 103, 104);
+
+}
+
+
+.react-com-send {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 0;
+    border-top: 1px solid rgb(182, 181, 181);
+    /*     border-bottom: 1px solid rgb(182, 181, 181);
+ */
+}
+
+.react-com-send>div {
+    display: flex;
+    align-items: center;
+    color: rgb(99, 101, 103);
+}
+
+.react-com-send>div span {
+    margin-left: 2px;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background-color: rgb(227, 228, 234);
+    }
+
+    .H-S {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-fb .menu-fb-menuIcon {
+        display: none;
+    }
+
+    .menu-fb {
+        margin: 0;
+    }
+
+    .search-msg {
+        width: 100%;
+    }
+
+    .search-icon-con {
+        margin-left: 7px;
+        margin-right: auto;
+    }
+
+    .search-icon-con p {
+        display: none;
+    }
+
+    .search-msg .notify-icon{
+        display: block;
+    }   
+
+    .search-msg .search-icon,
+    .search-msg .msg-icon,
+    .search-msg .notify-icon {
+        font-size: x-large;
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+    }
+
+    .side {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 0px;
+        background-color: rgb(227, 228, 234);
+        padding: 3px;
+    }
+
+    .head {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 5px 0;
+        box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .head-top {
+        padding: 0px 15px 0px;
+    }
+
+    .head-bottom {
+        order: 3;
+        margin: 0px 10px 10px 70px;
+        flex-wrap: wrap;
+    }
+
+    .head-bottom p {
+        background-color: rgb(227, 228, 234);
+        padding: 10px;
+        border-radius: 100px;
+        width: 93%;
+    }
+
+    .head-bottom-icon {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .head-bottom-icon>div {
+        display: flex;
+        align-items: center;
+    }
+
+    .md-none {
+        display: block;
+    }
+
+    .head-bottom-icon>div span {
+        margin-left: 5px;
+    }
+
+    .VideocamIcon {
+        color: rgb(226, 63, 76);
+    }
+
+    .MoodIcon {
+        color: rgb(238, 185, 74);
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        position: fixed;
+        height: 100%;
+        width: 55px;
+        background-color: white;
+        top: 40px;
+        left: 0;
+
+    }
+
+    .active {
+        color: rgb(55, 117, 231);
+        border: none;
+        border-left: 2px solid;
+    }
+
+    .navbar-icons {
+        display: block;
+        padding: 5px 10px;
+        color: rgb(78, 148, 220);
+    }
+
+    .navbar-icons .sidee {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: rgb(227, 228, 234);
+        padding: 3px;
+    }
+
+    .navbar-icons .side {
+        display: block;
+        height: 32px;
+        width: 32px;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 3px;
+    }
+
+    .navbar-icons span {
+        display: none;
+    }
+
+    .navbar-icons.navbar-icons-none {
+        display: none;
+    }
+
+    .AppsRoundedIcon {
+        border-radius: 50%;
+        background-color: rgb(227, 228, 234);
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        color: black;
+    }
+
+    .story-reels {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 10px 0px 70px;
+        padding: 0 10px;
+        background-color: white;
+        border-bottom: 1px solid rgb(244, 244, 244);
+    }
+
+    .story-reels>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .sr-active {
+        border-bottom: 3px solid rgb(55, 117, 231);
+    }
+
+    .story-reels>div span {
+        margin-left: 7px;
+    }
+
+    .stories {
+        padding: 7px 10px;
+        margin: 0px 10px 10px 70px;
+        display: flex;
+        overflow: auto hidden;
+        scrollbar-width: none;
+        background-color: white;
+    }
+
+    .feeds {
+        margin: 5px 10px 10px 70px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:996px) {
+    body {
+        background-color: rgb(241, 241, 245);
+    }
+
+    .H-S {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-fb .menu-fb-menuIcon {
+        display: none;
+    }
+
+    .menu-fb {
+        margin: 0;
+    }
+
+    .search-msg {
+        width: 100%;
+    }
+
+    .search-icon-con {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        background-color: rgb(227, 228, 234);
+        margin: 0 auto 0 auto;
+        width: 63% !important;
+        border-radius: 100px;
+        padding: 5px;
+        color: rgb(103, 102, 107);
+    }
+
+    .search-icon-con p {
+        margin: 0;
+    }
+
+
+
+    .search-msg .search-icon,
+    .search-msg .msg-icon,
+    .search-msg .notify-icon {
+        font-size: x-large;
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+    }
+
+    .side {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 0px;
+        background-color: rgb(227, 228, 234);
+        padding: 3px;
+    }
+
+    .head {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 5px 0;
+        box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .head-top {
+        padding: 0px 15px 0px;
+    }
+
+    .head-bottom {
+        order: 3;
+        margin: 0px 295px 10px 300px;
+        flex-wrap: wrap;
+    }
+
+    .head-bottom p {
+        background-color: rgb(227, 228, 234);
+        padding: 10px;
+        border-radius: 100px;
+        width: 93%;
+    }
+
+    .head-bottom-icon {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .head-bottom-icon>div {
+        display: flex;
+        align-items: center;
+    }
+
+    .md-none {
+        display: block;
+    }
+
+    .head-bottom-icon>div span {
+        margin-left: 5px;
+    }
+
+    .VideocamIcon {
+        color: rgb(226, 63, 76);
+    }
+
+    .MoodIcon {
+        color: rgb(238, 185, 74);
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        position: fixed;
+        height: 100%;
+        width: 255px;
+        background-color: rgb(241, 241, 245);
+        top: 50px;
+        left: 0;
+
+    }
+
+    .active {
+        color: rgb(55, 117, 231);
+        border: none;
+        border-left: 2px solid;
+    }
+
+    .navbar-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        padding: 5px 10px;
+        color: rgb(78, 148, 220);
+        position: relative;
+    }
+
+    .navbar-icons .sidee {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: rgb(227, 228, 234);
+        padding: 3px;
+        margin-right: -6px;
+    }
+
+    .navbar-icons .side {
+        display: block;
+        height: 32px;
+        width: 32px;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 3px;
+    }
+
+    .navbar-icons span {
+        display: block;
+        margin-left: 15px;
+        font-size: small;
+        color: rgb(102, 103, 105);
+    }
+
+    .navbar-icons.marginicon span {
+        margin-left: 7px;
+    }
+
+    .navbar-icons.navbar-icons-none {
+        display: none;
+    }
+
+    .hr {
+        position: absolute;
+        top: 32px;
+        width: 240px;
+        color: rgb(226, 226, 230);
+    }
+
+    .AppsRoundedIcon {
+        border-radius: 50%;
+        background-color: rgb(227, 228, 234);
+        width: 24px;
+        height: 24px;
+        padding: 5px;
+        color: black;
+        font-size: 30px !important;
+    }
+
+    .story-reels {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 295px 0px 300px;
+        padding: 0 10px;
+        background-color: white;
+        border-bottom: 1px solid rgb(244, 244, 244);
+    }
+
+    .story-reels>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .sr-active {
+        border-bottom: 3px solid rgb(55, 117, 231);
+    }
+
+    .story-reels>div span {
+        margin-left: 7px;
+    }
+
+    .stories {
+        padding: 7px 10px;
+        margin: 0px 295px 10px 300px;
+        display: flex;
+        overflow: auto hidden;
+        scrollbar-width: none;
+        background-color: white;
+    }
+
+    .feeds {
+        margin: 5px 295px 10px 300px;
+    }
+
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        position: fixed;
+        height: 100%;
+        width: 275px;
+        background-color: rgb(241, 241, 245);
+        top: 45px;
+        right: 0;
+
+    }
+
+    .sidebar-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: unset;
+        padding: 5px 10px;
+        color: rgb(102, 103, 105);
+    }
+
+    .sidebar-icons h4 {
+        margin: 0;
+    }
+
+
+
+    .sidebar-vsm {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-vsm>div {
+        padding: 0 10px 0 0;
+    }
+
+    .sidebar-icons .sidee {
+        display: block;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: rgb(227, 228, 234);
+        padding: 3px;
+    }
+
+    .sidebar-icons .side {
+        display: block;
+        height: 32px;
+        width: 32px;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 3px;
+    }
+
+    .sidebar-icons span {
+        display: block;
+        margin-left: 7px;
+    }
+
+}

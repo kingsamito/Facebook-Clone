@@ -6,6 +6,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone"
 import CollectionsIcon from "@mui/icons-material/Collections"
 import VideocamIcon from "@mui/icons-material/Videocam"
 import MoodIcon from "@mui/icons-material/Mood"
+import sam from "../asset/img/sam.JPG"
 
 export default function Head() {
     return (
@@ -24,12 +25,12 @@ export default function Head() {
                         </div>
                         <MapsUgcIcon fontSize="large" className="msg-icon" />
                         <NotificationsNoneIcon fontSize="large" className="notify-icon" />
-                        <img src="./sam.jpg" className="side" />
+                    <img src={sam} className="side" />
                     </div>
                 </div>
             </div>
             <div className="head-bottom">
-                <img src="./sam.jpg" className="img" />
+                <img src={sam} className="img" />
                 <p>What's on your mind?</p>
                 <div className="head-bottom-icon">
                     <div className="md-none">

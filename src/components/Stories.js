@@ -3,6 +3,7 @@ import AddRoundedIcon from "@mui/icons-material/AddRounded"
 import ImportContactsIcon from "@mui/icons-material/ImportContacts"
 import MovieIcon from "@mui/icons-material/Movie"
 import stories from "../data/stories"
+import sam from "../asset/img/sam.JPG"
 
 export default function Stories(props) {
     const storiesData = stories.map(item => {
@@ -29,7 +30,7 @@ export default function Stories(props) {
             </div>
             <div className="stories">
                 <div className="create-story">
-                    <img src="./sam.jpg" />
+                    <img src={sam} />
                     <div className="create-story-text">
                         <div className="add-icon-con">
                             <AddRoundedIcon fontSize="large" className="add-icon" />

@@ -12,6 +12,7 @@ import LinkIcon from "@mui/icons-material/Link"
 
 import groups from "../data/groups"
 import groupss from "../data/groupss"
+import sam from "../asset/img/sam.JPG"
 
 export default function Navbar() {
     const groupsData = groups.map(item => {
@@ -38,7 +39,7 @@ export default function Navbar() {
                 <span>Home</span>
             </div>
             <div className="navbar-icons md-none">
-                <img src="./sam.jpg" className="sidee" />
+                <img src={sam} className="sidee" />
                 <span>Samito Robito</span>
                 <hr className="hr" />
             </div>

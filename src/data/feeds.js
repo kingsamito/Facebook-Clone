@@ -1,3 +1,4 @@
+import sam from "../asset/img/sam.JPG"
 export default [
     {
         id: 1,
@@ -9,7 +10,7 @@ export default [
         time: "1d",
         whoCanView: "Public",
         text:"Hello Everyone. I am new here",
-        feedsPic:"../asset/img/sam.JPG",
+        feedsPic:sam,
         reaction: "Mapeto and 828 others",
         noComment: "1k",
     },

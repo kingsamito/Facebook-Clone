@@ -9,7 +9,7 @@ export default [
         time: "1d",
         whoCanView: "Public",
         text:"Hello Everyone. I am new here",
-        feedsPic:"sam.jpg",
+        feedsPic:"../asset/img/sam.JPG",
         reaction: "Mapeto and 828 others",
         noComment: "1k",
     },
